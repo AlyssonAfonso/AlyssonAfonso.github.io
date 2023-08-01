@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Aqui eu coloquei em (pt-br), mas já que tá tudo em ingles, não sei se faz diferença-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+
+</head>
+
+<body>
+  <h1>Travel reservation form</h1>
+
+  <p><strong>* denotes mandotory</strong></p>
+
+  <form action="#" method="POST">
+    <label for="nome" >Full name*:</label>
+    <br>
+
+    <input type="text" id="nome" name="nome" required placeholder="FirstName LastName">
+    <br>
+
+    <label for="email">Email address*:</label>
+    <br>
+
+    <input type="email" id="email" name="email" required placeholder="Email address">
+    <br>
+
+    <label for="data_nascimento">Arrival date*:</label>
+    <br>
+
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
+    <br>
+
+    <label for="telefone">Number of persons*:</label>
+    <br>
+
+    <input type="tel" id="telefone" name="telefone" pattern="[0-9]+" required placeholder="Only numbers">
+    <br>
+
+    <label for="pacote">Select Tour Package*:</label>
+    <br>
+
+    <select id="pacote" name="pacote" required>
+      <option value="" disabled selected>Select Tour Package</option>
+      <option value="Goa">Goa</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Assam">Assam</option>
+    </select>
+    <br>
+
+    <label>What would you want to avail?*</label>
+    <br>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="boarding" name="avil" value="boarding">
+      <label for="boarding">Boarding</label>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="fooding" name="avil" value="fooding">
+      <label for="fooding">Fooding</label>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="sightseeing" name="avil" value="sightseeing">
+      <label for="sightseeing">Sight seeing</label>
+    </div>
+
+    <label for="cupom">Discout Coupon Code:</label>
+    <br>
+
+    <input type="text" id="cupom" name="cupom" pattern=".{6}" maxlength="6" required placeholder="Six digits">
+    <br>
+
+    <label>Terms and Conditions*</label>
+    <div class="checkbox-container">
+      <input type="radio" id="agree" name="terms" value="agree" required>
+      <label for="agree">I agree</label>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="radio" id="disagree" name="terms" value="disagree">
+      <label for="disagree">I disagree</label>
+    </div>
+    <br>
+
+    <input type="submit" value="Complete reservation">
+  </form>
+</body>
+
+</html>
