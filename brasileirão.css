@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container {
+    max-width: max-content;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(11, 100px); /* Tamanho fixo para todas as colunas */
+    align-items: center; /* Alinhar verticalmente as células */
+    border-bottom: 1px solid #ccc;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.table-cell {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Impedir a quebra de texto */
+    overflow: visible; /* Ocultar texto extra */
+}
+
+.with-icon {
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px; /* ajuste o tamanho do ícone conforme necessário */
+    height: 20px;
+    margin-left: 42px; /* espaço entre o ícone e o texto */
+    /* Adicione a imagem de fundo ou use "background-image: url('caminho/do/seu/icone.png');" */
+    background-size: cover;
+}
+
+/* Estilos específicos para ícones de times */
+.icon-inter {
+    background-image: url('https://logodownload.org/wp-content/uploads/2015/05/internacional-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-palm {
+    background-image: url('https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-fort {
+    background-image: url('https://logodownload.org/wp-content/uploads/2018/08/fortaleza-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-flumi {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/09/fluminense-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-flame {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/09/flamengo-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-ameri {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Escudo_Am%C3%A9rica_de_Minas.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-corin {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/11/corinthians-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-bota {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-saopa {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/09/sao-paulo-fc-logo.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-athle {
+    background-image: url('https://logodownload.org/wp-content/uploads/2018/12/athletico-pr-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-atle {
+    background-image: url('https://logodownload.org/wp-content/uploads/2016/10/atletico-mineiro-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-goias {
+    background-image: url('https://logodownload.org/wp-content/uploads/2017/02/goias-logo.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-santos {
+    background-image: url('https://logodownload.org/wp-content/uploads/2017/02/santos-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-cuiaba {
+    background-image: url('https://image-service.onefootball.com/transform?w=128&dpr=2&image=https://images.onefootball.com/icons/teams/164/2704.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-curiti {
+    background-image: url('https://logodownload.org/wp-content/uploads/2017/02/coritiba-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-atleg {
+    background-image: url('https://logodownload.org/wp-content/uploads/2017/02/atletico-go-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-braga {
+    background-image: url('https://logodownload.org/wp-content/uploads/2020/01/red-bull-bragantino-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-avai {
+    background-image: url('https://vasco.com.br/wp-content/uploads/2021/04/Avai.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-ceara {
+    background-image: url('https://logodownload.org/wp-content/uploads/2017/02/ceara-sc-logo-0.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-juvent {
+    background-image: url('https://image-service.onefootball.com/transform?w=128&dpr=2&image=https://images.onefootball.com/icons/teams/164/4779.png'); /* Substitua pelo caminho do ícone do time */
+}
+
+.icon-dez {
+    margin-left: 33px;
+}
