@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+  
+  .main-container div {
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      max-width: 1200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-container {
+        display: block;
+    }
+    
+  }
+  
+ 
+    .one {
+        background-color: aqua;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3 ;
+  }
+  
+  .two {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      background-color: brown;
+  }
+
+  .three {
+      background-color: yellow;
+  }
+
+  .four {
+      background-color: green;
+      
+  }
+
+  .five {
+      background-color: rgb(179, 53, 158);
+  }
+
+  .six {
+      background-color: salmon;
+  }
+
+  .seven {
+    grid-column-start: 3 ;
+    grid-column-end: 3 ;
+    grid-row-start: 2;
+    background-color: chocolate;
+  }
+
+  .eight {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: violet;
+  }
+
+  .nine {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      background-color: plum;
+  }
+
+  
