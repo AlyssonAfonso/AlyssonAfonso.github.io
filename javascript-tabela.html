@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Insert row in a table - w3resource</title>
+</head>
+<body>
+  <input type="text" id="txtNumRows" />
+  <button id="jsAddRows" onclick="js_add_rows()">Add Rows</button>
+  <table id="sampleTable" border="1">
+    <tr>
+      <td>Row1 cell1</td>
+      <td>Row1 cell2</td>
+    </tr>
+    <tr>
+      <td>Row2 cell1</td>
+      <td>Row2 cell2</td>
+    </tr>
+  </table>
+  <br>
+  <p id="errorMessage"></p>
+  <script>
+    function js_add_rows() {
+      var input = document.getElementById('txtNumRows');
+      var errorMessage = document.getElementById('errorMessage');
+      var table = document.getElementById('sampleTable');
+      var numRows = parseInt(input.value);
+
+      // Limpa mensagens de erro anteriores
+      errorMessage.textContent = "";
+
+      if (isNaN(numRows) || numRows < 1 || numRows > 10) {
+        errorMessage.textContent = "Valores válidos são entre 1 e 10 e devem ser numéricos.";
+      } else {
+        for (var i = 0; i < numRows; i++) {
+          var newRow = table.insertRow(-1);
+          var cell1 = newRow.insertCell(0);
+          var cell2 = newRow.insertCell(1);
+          cell1.textContent = "newRow cell1";
+          cell2.textContent = "newRow cell2";
+        }
+      }
+
+      // Limpa o campo de entrada
+      input.value = "";
+    }
+  </script>
+</body>
+</html>

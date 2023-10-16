@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel Counter</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Digite uma palavra ou frase">
+    <button onclick="contarVogais()">Contar Vogais</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contarVogais() {
+            const inputString = document.getElementById("inputString").value.toLowerCase();
+            const vogais = "aeiou";
+            let contador = 0;
+
+            for (let i = 0; i < inputString.length; i++) {
+                if (vogais.indexOf(inputString[i]) !== -1) {
+                    contador++;
+                }
+            }
+
+            document.getElementById("resultado").textContent = "Número de vogais: " + contador;
+        }
+    </script>
+</body>
+</html>

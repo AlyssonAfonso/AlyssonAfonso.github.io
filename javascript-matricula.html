@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Form</title>
+   
+    <style>
+        .box {
+            text-align: center;
+            border: solid 1px black;
+        }
+        p {
+            text-align: left;
+        }
+
+        .box_two {
+            text-align: center;
+            border: solid 1px black;
+        }
+
+        .Box_three {
+            align-items: center;
+            text-align: center;
+            border: solid 1px black;
+        }
+
+        button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Escola Virtual</h1>
+        <h3>Formulário de Pré-Matrícula</h3>
+        <hr>
+        <div class="box_two">
+            <p><b>Dados Pessoais:</b></p>
+            Nome do Aluno(a):
+            <input id="nome" placeholder="Digite seu nome" type="text"><br><br>
+            Data de Nascimento:
+            <input id="data" type="date"><br><br>
+            Nome da Mãe:
+            <input id="mae" placeholder="Digite o nome" type="text"><br><br>
+            Nome do Pai:
+            <input id="Pai" placeholder="Digite o nome" type="text"><br><br>
+            Telefone (DDD):
+            <input id="tele" type="number"><br>
+            Telefone:
+            <input id="tel" type="number"><br><br>
+            E-Mail:
+            <input id="email" placeholder="Digite seu email" type="email"><br><br>
+        </div>
+        <br>
+        <div class="Box_three">
+            <p><b>Informações de Matrícula:</b></p>
+            Série:
+            <select name="best" id="escola">
+                <option value="Pré-escolar">Pré-escolar</option>
+                <option value="Fundamental">Fundamental</option>
+                <option value="Ensino Médio">Ensino Médio</option>
+            </select>
+            Turno:
+            <div class="escolher">
+                Matutino<input type="radio" name="escolhe" value="Matutino"><br>
+                Vespertino<input type="radio" name="escolhe" value="Vespertino"><br>
+            </div>
+            Atividades Extracurriculares:
+            <div class="opçao" aria-="true" min="1" max="3">
+                Música<input type="checkbox" name="Lugar" value="Música"><br>
+                Natação<input type="checkbox" name="Lugar" value="Natação"><br>
+                Judô<input type="checkbox" name="Lugar" value="Judô"><br>
+                Futebol<input type="checkbox" name="Lugar" value="Futebol"><br>
+                Balé<input type="checkbox" name="Lugar" value="Balé"><br>
+            </div>
+        </div><br><br>
+        <button id="enviar" onclick="enviar()">Enviar Formulário</button>
+        <button id="limpar">Limpar Campos</button><br><br>
+    </div>
+    
+</body>
+<script src="veriForm.js"></script>
+</html>
