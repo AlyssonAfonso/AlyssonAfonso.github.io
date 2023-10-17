@@ -5,18 +5,17 @@
 }
 
 body {
-    background: linear-gradient(150deg, #50cee1, #021e38);
+    background: linear-gradient(150deg, rgb(122, 65, 65), rgb(61, 59, 59) );
     height: 100vh;
     text-align: center;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
+    color: rgb(13, 63, 107);
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .box {
     position: absolute;
-    background-color: rgb(96, 174, 177);
-    border-radius: 15px;
+    background-color: rgb(247, 247, 247);
     padding: 15px;
     top: 50%;
     left: 50%;
@@ -26,10 +25,11 @@ body {
 
 input, button {
     height: 30px;
-    border-radius: 15px;
+    border-radius: 1px;
     text-align: center;
 }
 
 #a {
     color: black;
+    font-family: sans-serif;
 }

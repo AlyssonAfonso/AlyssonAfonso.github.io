@@ -4,7 +4,7 @@ function calcularIMC() {
     const nome = document.getElementById("name").value;
     const imc = (peso/(altura*altura).toFixed(1));
 
-    document.querySelector("p").innerHTML =  `Olá ${nome} , seu IMC é de ${imc}`;
+    document.querySelector("p").innerHTML =  `Oi ${nome} , seu IMC é de ${imc}`;
 
 
 
