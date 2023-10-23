@@ -9,6 +9,6 @@ function separarNomeSobrenome() {
         document.getElementById('nome').value = nome;
         document.getElementById('sobrenome').value = sobrenome;
     } else {
-        alert('NOME COMPLETO INVÁ LIDO.');
+        alert('NOME COMPLETO INVÁLIDO.');
     }
 }
